@@ -4,8 +4,10 @@ import numpy as np
 from prediction import predict
 
 
-st.title('Classifying Iris Flowers')
-
+st.title("Classifying Iris Flowers")
+st.markdown('Toy model to play to classify iris flowers into\
+            (setos,versicolor,virginica) based on their sepal/petal\
+            and length/width')
 
 st.header("plant features")
 
@@ -16,7 +18,7 @@ with col1:
     sepal_l=st.slider('Sepal Length (cm)',1.0, 8.0, 0.5)
     sepal_w=st.slider('Sepal Width (cm)',3.0, 4.4, 0.5)
 
-with col1:
+with col2:
     st.text('Sepal Characteristics')
     petal_l=st.slider('Petal Length (cm)',1.0, 7.0, 0.5)
     petal_w=st.slider('Petal Width (cm)',0.1, 2.5, 0.5)
